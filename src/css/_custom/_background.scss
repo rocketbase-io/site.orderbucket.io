@@ -1,0 +1,40 @@
+.framed-margin {
+  margin: 80px 1.8vw 1.8vw 1.8vw;
+}
+
+
+.bg-gradient-north {
+  background-image: linear-gradient(155deg,#8FBCBB 0%,#88C0D0 15%,#81A1C1 50%,#5E81AC 100%);
+}
+
+.shape-slanted {
+  background-image: url("../img/shapes/slanted.svg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.shape-wavy {
+  background-image: url(../img/shapes/wavy.svg);
+  background-position: right bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin: -2px;
+}
+
+.shape-waves {
+  background-image: url(../img/shapes/waves.svg);
+  background-position: top left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.main-frame-wrapper {
+  position: relative;
+  margin: -2px -2px -2px -2px;
+}
+
+.light-gray-bg {
+  background-color: $light-grey;
+}
