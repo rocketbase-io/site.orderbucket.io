@@ -156,33 +156,33 @@ description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. La
     <div class="columns">
       <div class="column is-hidden-mobile is-3"></div>
       <div class="column">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" action="/form-submit" data-netlify="true">
           <input type="hidden" name="form-name" value="contact"/>
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" required placeholder="Ihr Name">
+              <input class="input" type="text" name="name" required placeholder="Ihr Name">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input" type="email" required placeholder="Ihre Email-Adresse">
+              <input class="input" type="email" name="email" required placeholder="Ihre Email-Adresse">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Ihr Anliegen" required></textarea>
+              <textarea class="textarea" placeholder="Ihr Anliegen..." name="message" required></textarea>
             </div>
           </div>
 
           <div class="field">
             <div class="control">
               <label class="checkbox">
-                <input type="checkbox" required> Ich wünsche per Email kontaktiert zu werden.
+                <input type="checkbox" name="pleaseContact" required> Ich wünsche per Email kontaktiert zu werden.
               </label>
             </div>
           </div>
