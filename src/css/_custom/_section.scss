@@ -38,9 +38,11 @@
   &.no-min-height {
     min-height: auto;
   }
+
   h1 {
     color: $grey-white;
   }
+
   .logo {
     img {
       width: 200px;
@@ -60,10 +62,15 @@
 }
 
 img.screenshot {
-  box-shadow: 0 0 6px rgba(0,0,0,0.5);
-  max-width: 40vw;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  max-width: 600px;
   height: auto;
   margin: 0 auto;
+
+  @media screen and (max-width: 769px) {
+    width: 80vw;
+  }
 }
 
 .section, .hero {
@@ -133,6 +140,7 @@ dl.dl-horizontal {
     margin-left: 180px;
   }
 }
+
 .extra-margin-bottom {
   margin-bottom: 20px;
 }
