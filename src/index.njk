@@ -37,6 +37,7 @@ description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. La
         </div>
       </div>
     </div>
+  </div>
 </section>
 
 
@@ -155,40 +156,43 @@ description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. La
     <div class="columns">
       <div class="column is-hidden-mobile is-3"></div>
       <div class="column">
-        <div class="field">
-          <label class="label">Name</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Ihr Name">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"/>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" required placeholder="Ihr Name">
+            </div>
           </div>
-        </div>
 
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="Ihre Email-Adresse">
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" required placeholder="Ihre Email-Adresse">
+            </div>
           </div>
-        </div>
 
-        <div class="field">
-          <label class="label">Message</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Ihr Anliegen"></textarea>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Ihr Anliegen" required></textarea>
+            </div>
           </div>
-        </div>
 
-        <div class="field">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox">Ich wünsche per Email kontaktiert zu werden.
-            </label>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" required> Ich wünsche per Email kontaktiert zu werden.
+              </label>
+            </div>
           </div>
-        </div>
 
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button is-link">Senden</button>
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">Senden</button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
       <div class="column is-hidden-mobile is-3"></div>
     </div>
