@@ -33,7 +33,7 @@
 
 .hero {
   color: $grey-white;
-  min-height: 380px;
+  min-height: 420px;
 
   &.no-min-height {
     min-height: auto;
@@ -43,11 +43,9 @@
     color: $grey-white;
   }
 
-  .logo {
-    img {
-      width: 200px;
-      height: 200px;
-    }
+  img.logo {
+    width: 56px;
+    height: 56px;
   }
 
   .hero-body {

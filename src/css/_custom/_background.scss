@@ -28,6 +28,12 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: transparent;
+
+
+
+  @media screen and (max-width: 769px) {
+    background-image: url(../img/shapes/waves-mobile.svg);
+  }
 }
 
 .main-frame-wrapper {

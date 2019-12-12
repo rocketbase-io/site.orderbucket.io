@@ -1,5 +1,5 @@
 # orderbucket website
-![orderbucket](src/img/orderbucket.svg | width=400)
+![orderbucket](src/img/og-previews/og-preview.jpg)
 
 static website repository of orderbucket.io
 
