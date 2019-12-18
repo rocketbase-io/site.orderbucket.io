@@ -142,3 +142,15 @@ dl.dl-horizontal {
 .extra-margin-bottom {
   margin-bottom: 20px;
 }
+
+.legal-text {
+  h3 {
+    font-family: $family-sans-serif;
+    font-size: 1.5em;
+    margin: 0.75em 0;
+  }
+
+  h2 {
+    margin: 1em 0 0.75em 0;
+  }
+}
