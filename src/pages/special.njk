@@ -1,0 +1,70 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: special
+  title: Corona
+  order: 4
+
+
+date: Last Modified
+tags:
+  - footer
+
+title: Corona Krise
+description: "Um Einznelhändler in Zeiten der Corona Krise zu unterstützen bieten wir orderbucket für die Dauer der Krise für 1€/Monat an."
+---
+{% set navPages = collections.all | eleventyNavigation %}
+<ul class="header-navigation">
+{%- for entry in navPages %}
+  <li{% if entry.url == page.url %} class="header-navigation-item--active header-navigation-item"{% endif %} class="header-navigation-item">
+    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+  </li>
+{%- endfor %}
+</ul>
+
+<section class="hero shape-waves">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-6-desktop is-8-tablet">
+          <h1 class="title">Hilfe in Zeiten von Corona</h1>
+          <div class="title-divider long-version extra-margin-bottom"></div>
+          <div class="columns is-mobile">
+            <div class="column">
+              <p>Um Einznelhändler in Zeiten der Corona Krise zu unterstützen bieten wir orderbucket für die Dauer der Krise für 1€/Monat an.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div>
+      <p>
+        Der Coronavirus stellt für uns alle eine große und ungewohnte Herausforderung dar, die den Alltag der Menschen auf unabsehbare Zeit beeinflussen wird.
+        Wie weit sich die Situation noch zuspitzen wird ist derzeit noch unklar und gerade die Laufkundschaft der Einzelhändler könnte so auf lange Zeit wegfallen.
+        Dabei trifft es jeder Branche, ob Restaurant, Handwerker oder Selbständige. Gerade jetzt braucht es Lösungen für Einzelhändler die Gewinneinbußen
+         zu kompensieren und neue Absatzwege zu schaffen.
+      </p>
+    </div>
+    <div>
+      <p>
+        In diesen schwierigen Zeiten müssen wir alle Zusammenhalten. Die rocketbase software productions GmbH will darum
+         einen Beitrag leisten und Einzelhändlern die Möglichkeit geben, mit einem symbolischen Beitrag durch die Krise zu kommen.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div>
+      <p>
+        Mit einem Beitrag von 1€ pro Monat können Sie auf den vollen Umfang von orderbucket zugreifen. Damit haben Sie die
+        Chance Ihre Kunden auch zu Hause weiterhin zu erreichen. Solange diese Krise anhalten wird haben Sie somit für einen
+        geringen Beitrag die Möglichkeit Ihr Sortiment ins Internet zu verlegen.
+      </p>
+    </div>
+  </div>
+</section>
