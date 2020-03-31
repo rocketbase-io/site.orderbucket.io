@@ -385,7 +385,7 @@
       //
       autoAttach: true,
 
-      // simple whitelist/blacklist for pages. specify page by:
+      // simple whitelist/blacklist for special. specify page by:
       //   - using a string : '/index.html'           (matches '/index.html' exactly) OR
       //   - using RegExp   : /\/page_[\d]+\.html/    (matched '/page_1.html' and '/page_2.html' etc)
       whitelistPage: [],
