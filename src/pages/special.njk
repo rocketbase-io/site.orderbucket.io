@@ -31,7 +31,7 @@ description: "Um Einznelhändler in Zeiten der Corona Krise zu unterstützen bie
           <div class="title-divider long-version extra-margin-bottom"></div>
           <div class="columns is-mobile">
             <div class="column">
-              <p>Um Einznelhändler in Zeiten der Corona Krise zu unterstützen bieten wir orderbucket für die Dauer der Krise für 1€/Monat an.</p>
+              <p>Um Einznelhändler in Zeiten der Corona Krise zu unterstützen bieten wir OrderBucket für die Dauer der Krise für 1€/Monat an.</p>
             </div>
           </div>
         </div>
@@ -44,27 +44,88 @@ description: "Um Einznelhändler in Zeiten der Corona Krise zu unterstützen bie
     <div>
       <p>
         Der Coronavirus stellt für uns alle eine große und ungewohnte Herausforderung dar, die den Alltag der Menschen auf unabsehbare Zeit beeinflussen wird.
-        Wie weit sich die Situation noch zuspitzen wird ist derzeit noch unklar und gerade die Laufkundschaft der Einzelhändler könnte so auf lange Zeit wegfallen.
+        Durch Ausgangsbeschränkungen und Ladenschließungen ist es unmöglich für Einzelhändler ihre Kundschaft zu erreichen.
         Dabei trifft es jeder Branche, ob Restaurant, Handwerker oder Selbständige. Gerade jetzt braucht es Lösungen für Einzelhändler die Gewinneinbußen
          zu kompensieren und neue Absatzwege zu schaffen.
       </p>
-    </div>
-    <div>
       <p>
-        In diesen schwierigen Zeiten müssen wir alle Zusammenhalten. Die rocketbase software productions GmbH will darum
-         einen Beitrag leisten und Einzelhändlern die Möglichkeit geben, mit einem symbolischen Beitrag durch die Krise zu kommen.
+        In diesen schwierigen Zeiten müssen wir alle Zusammenhalten. Die rocketbase software productions GmbH will aus diesem Grund
+         einen Beitrag leisten und Einzelhändlern die Möglichkeit geben, mit einem symbolischen Beitrag die Krise zu überstehen.
       </p>
+      <p>
+        Dabei können Sie mit einem Beitrag von 1€ pro Monat auf den vollen Umfang an Funktionalitäten von OrderBucket zugreifen.
+        Das bietet Ihnen weiterhin die Chance Ihre Kunden auch zu Hause zu erreichen. Solange diese Krise anhalten wird soll Ihnen dabei
+        diese Unterstüzung zur Verfügung stehen.
+      </p>
+      <p>Kontaktieren Sie uns gerne und wir besprechen alles weitere.</p>
+      <p>Bleiben Sie gesund!</p>
+      <p>Euer Team von rocketbase.io</p>
     </div>
   </div>
 </section>
+
 <section class="section">
   <div class="container">
-    <div>
-      <p>
-        Mit einem Beitrag von 1€ pro Monat können Sie auf den vollen Umfang von orderbucket zugreifen. Damit haben Sie die
-        Chance Ihre Kunden auch zu Hause weiterhin zu erreichen. Solange diese Krise anhalten wird haben Sie somit für einen
-        geringen Beitrag die Möglichkeit Ihr Sortiment ins Internet zu verlegen.
-      </p>
+    <div class="columns">
+      <div class="column is-hidden-mobile is-3"></div>
+      <div class="column">
+        <h3>Sie haben noch Fragen?</h3>
+        <h2 class="title">Lassen Sie uns alles weitere besprechen.</h2>
+        <div class="title-divider"></div>
+        <p>Kontaktieren Sie uns und wir erklären Ihnen gerne alles im Detail.</p>
+      </div>
+      <div class="column is-hidden-mobile is-3"></div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-hidden-mobile is-3"></div>
+      <div class="column">
+        <form name="contact" method="POST" action="/form-submit" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"/>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" name="name" required placeholder="Ihr Name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" name="email" required placeholder="Ihre Email-Adresse">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Telefon</label>
+            <div class="control">
+              <input class="input" type="text" name="phone" placeholder="Ihre Telefonnummer">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Ihr Anliegen..." name="message" required></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" name="pleaseContact" required> Ich wünsche per Email/Telefon kontaktiert zu werden.
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">Senden</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="column is-hidden-mobile is-3"></div>
     </div>
   </div>
 </section>
