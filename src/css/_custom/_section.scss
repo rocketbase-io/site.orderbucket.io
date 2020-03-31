@@ -2,12 +2,34 @@
   padding-bottom: 40px;
 }
 
+.notification.teaser {
+  margin-bottom: 0;
+}
+
+.home .navbar {
+  background-color: #7b9cbf;
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-item a {
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
 .navbar {
   background: transparent;
-  min-height: 4.5rem;
-  position: absolute;
-  top: 0;
-  width: 100%;
+
+  .navbar-brand img {
+    padding-right: 0.3em;
+  }
 
   &-menu {
     .navbar-item {

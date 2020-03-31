@@ -4,18 +4,13 @@ eleventyNavigation:
   key: product
   title: Das Produkt
   order: 1
+
+date: Last Modified
+
+tags:
+  - main
+  - footer
 ---
-<div class="special-banner">
-  <p>Hilfe in schweren Zeiten: Wir unterstützen Einzelhändler mit einem Onlineshop durch die Krise zu gelangen. <a href="/pages/special">Mehr Infos</a></p>
-</div>
-{% set navPages = collections.all | eleventyNavigation %}
-<ul class="header-navigation">
-{%- for entry in navPages %}
-  <li{% if entry.url == page.url %} class="header-navigation-item--active header-navigation-item"{% endif %} class="header-navigation-item">
-    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-  </li>
-{%- endfor %}
-</ul>
 
 <section class="section">
   <div class="container">
