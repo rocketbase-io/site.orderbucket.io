@@ -4,12 +4,22 @@
 
 .notification.teaser {
   margin-bottom: 0;
+
+  p {
+    @media screen and (max-width: 768px) {
+      font-size: 0.8em;
+    }
+  }
 }
 
 .home .navbar {
-  background-color: #7b9cbf;
+  background-color: #7096c5;
 
-  .navbar-brand {
+  .navbar-menu {
+    background-color: #7096c5;
+  }
+
+  .navbar-brand .navbar-item {
     display: none;
   }
 
