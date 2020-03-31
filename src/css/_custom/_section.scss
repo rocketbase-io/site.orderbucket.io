@@ -92,8 +92,19 @@
 }
 
 img.screenshot {
-  width: 100vw;
-  max-width: 650px;
+  width: 40vw;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+
+  @media screen and (max-width: 769px) {
+    width: 80vw;
+  }
+}
+
+img.customer-logo {
+  width: 20vw;
+  max-width: 250px;
   height: auto;
   margin: 0 auto;
 
