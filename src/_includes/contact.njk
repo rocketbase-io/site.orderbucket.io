@@ -1,0 +1,65 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-hidden-mobile is-3"></div>
+      <div class="column">
+        <h3>{{  contactIntro | default('Sie haben noch Fragen?', true)  }}</h3>
+        <h2 class="title">{{  contactHeader | default('Lassen Sie uns alles weitere besprechen.', true)  }}</h2>
+        <div class="title-divider"></div>
+        <p>Kontaktieren Sie uns und wir erklären Ihnen gerne alles im Detail.</p>
+      </div>
+      <div class="column is-hidden-mobile is-3"></div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-hidden-mobile is-3"></div>
+      <div class="column">
+        <form name="contact" method="POST" action="/form-submit" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"/>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" name="name" required placeholder="Ihr Name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" name="email" required placeholder="Ihre Email-Adresse">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Telefon</label>
+            <div class="control">
+              <input class="input" type="text" name="phone" placeholder="Ihre Telefonnummer">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Ihr Anliegen..." name="message" required></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" name="pleaseContact" required> Ich wünsche per Email/Telefon kontaktiert zu werden.
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">Senden</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="column is-hidden-mobile is-3"></div>
+    </div>
+  </div>
+</section>

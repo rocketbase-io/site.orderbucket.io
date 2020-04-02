@@ -35,7 +35,7 @@
   }
 }
 
-.home .navbar {
+.home-layout .navbar {
   background-color: #7096c5;
 
   .navbar-menu {
@@ -59,6 +59,9 @@
 
 .navbar {
   background: transparent;
+  @media screen and (min-width: 1024px) {
+    padding-top: 1rem;
+  }
 
   .navbar-brand img {
     padding-right: 0.3em;
@@ -83,6 +86,11 @@
       }
     }
 
+  }
+}
+
+.base-layout {
+  .navbar {
   }
 }
 
