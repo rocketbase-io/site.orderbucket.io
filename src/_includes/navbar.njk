@@ -2,8 +2,8 @@
   <div class="container">
 
     <div class="navbar-brand">
-      <a class="navbar-item has-text-white is-size-4 has-text-weight-bold" href="/">
-        OrderBucket
+      <a class="navbar-item has-text-weight-bold" href="/">
+        <img src="/img/orderbucket.svg"  class="is-size-4" alt=""> OrderBucket
       </a>
       <span role="button" tabindex="0" class="navbar-burger burger" data-target="navbar-menu">
           <span></span>
@@ -15,7 +15,7 @@
     <div id="navbar-menu" class="navbar-menu">
 
 
-      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+      {{ collections.main | eleventyNavigation | eleventyNavigationToHtml({
         listElement: "div",
         listItemElement: "div",
 
