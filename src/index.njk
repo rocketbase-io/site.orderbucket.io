@@ -9,6 +9,10 @@ date: Last Modified
 tags:
   - footer
 
+
+contactIntro: Ganz nach Ihrem Geschmack?
+contactHeader: Sie möchten Orderbucket selbst ausprobieren?
+
 showTeaser: true
 title: orderbucket.io
 description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. Lassen Sie Orderbucket die Bestellung und Koordination von Belieferungen organisieren."
@@ -87,7 +91,7 @@ description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. La
             spielerisch leicht Bestellungen zusammenstellen.</p>
       </div>
       <div class="column is-narrow has-text-centered">
-        <img src="/img/gifs/shop-browse.gif" class="screenshot"
+        <img src="/img/gifs/shop-browse.gif" class="screenshot has-shadow"
              alt="Online Präsentation Ihres Sortiments für Kunden">
       </div>
     </div>
@@ -137,7 +141,7 @@ description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. La
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-narrow has-text-centered">
-        <img src="/img/screenshots/webshop-frontpage.png" class="screenshot"
+        <img src="/img/mock-email.png" class="screenshot"
              alt="Online Präsentation Ihres Sortiments für Kunden">
       </div>
       <div class="column">
@@ -151,68 +155,6 @@ description: "Orderbucket schafft einen neuen Vertriebskanal zu Ihren Kunden. La
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-hidden-mobile is-3"></div>
-      <div class="column">
-        <h3>Ganz nach Ihrem Geschmack?</h3>
-        <h2 class="title">Sie möchten Orderbucket selbst ausprobieren?</h2>
-        <div class="title-divider"></div>
-        <p>Kontaktieren Sie uns und wir erklären Ihnen gerne alles im Detail.</p>
-      </div>
-      <div class="column is-hidden-mobile is-3"></div>
-    </div>
 
-    <div class="columns">
-      <div class="column is-hidden-mobile is-3"></div>
-      <div class="column">
-        <form name="contact" method="POST" action="/form-submit" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact"/>
-          <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
-              <input class="input" type="text" name="name" required placeholder="Ihr Name">
-            </div>
-          </div>
 
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-              <input class="input" type="email" name="email" required placeholder="Ihre Email-Adresse">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Telefon</label>
-            <div class="control">
-              <input class="input" type="text" name="phone" placeholder="Ihre Telefonnummer">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Ihr Anliegen..." name="message" required></textarea>
-            </div>
-          </div>
-
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox" name="pleaseContact" required> Ich wünsche per Email/Telefon kontaktiert zu werden.
-              </label>
-            </div>
-          </div>
-
-          <div class="field is-grouped">
-            <div class="control">
-              <button type="submit" class="button is-link">Senden</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="column is-hidden-mobile is-3"></div>
-    </div>
-  </div>
-</section>
+{% include "contact.njk" %}
